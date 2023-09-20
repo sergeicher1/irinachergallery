@@ -1,13 +1,310 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #e6e2c3;
+    color: #c94c4c;
+}
+
+.headerBack {
+    width: 100%;
+    background: url('../public/assets/bigB.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #e6e2c3;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+    color: rgb(75, 68, 68);
+    transform: scale(1.5);
+}
+
+header {
+    position: relative;
+}
+
+header .shop-cart {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    min-height: 500px;
+    background-color: #e6e2c3;
+    box-shadow: 1px 1px 33px 5px rgba(10, 10, 10, 0.78);
+    -webkit-box-shadow: 1px 1px 33px 5px rgba(10, 10, 10, 0.78);
+    -moz-box-shadow: 1px 1px 33px 5px rgba(10, 10, 10, 0.78);
+    border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    border: 1px solid #f3b200;
+    z-index: 1000;
+    margin-left: 20px;
+}
+
+header .totalList {
+    font-size: 50px;
+    text-align: center;
+    color: forestgreen;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+header .totalList li {
+    display: inline;
+    margin: 50px;
+}
+
+header .totalList .total {
+    box-shadow: 0px 0px 0px 4px rgba(30, 238, 11, 0.315);
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(30, 238, 11, 0.315);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(30, 238, 11, 0.315);
+}
+
+header .totalList .procced:hover {
+    transition: transform 800ms ease;
+
+    transform: scale(1.20);
+    cursor: pointer;
+    color: rgba(0, 124, 17, 0.78)
+}
+
+header .shop-cart .empty {
+    padding: 30vh;
+    text-align: center;
+}
+
+header .empty .upset {
+    width: 100px;
+    height: 100px;
+}
+
+div .item .smile {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    color: rgb(30, 165, 98);
+}
+
+header .shop-cart .item ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.item .orderItem {
+    margin: 20px;
+    font-size: 50px;
+
+}
+
+header .shop-cart .item img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-top: 80px;
+
+}
+
+header .shop-cart .item b {
+    color: forestgreen;
+
+    /* transform: translate(15vh, 10vh); */
+    /* the price does not go to center ???  */
+
+}
+
+
+.item .orderItem li .deleteItem,
+.item .orderItem li .payMoney {
+    margin-top: 80px;
+    cursor: pointer;
+    float: right;
+    transition: color, transform 800ms ease;
+}
+
+.item .orderItem li .deleteItem:hover,
+.item .orderItem li .payMoney:hover {
+    color: #f3b200;
+    transform: scale(1.50);
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+    margin-bottom: 100px;
+}
+
+header ul.nav li {
+    display: inline;
+    padding-right: 30px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: color transform 800ms ease;
+}
+
+header ul.nav li:hover {
+    color: rgb(75, 68, 68);
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+.shine {
+    color: #ec0808;
+    font-size: 100px !important;
+    width: 60%;
+    font-family: 'Sacramento', cursive;
+    letter-spacing: 7px !important;
+    transform: translate(15vh, 10vh);
+}
+
+.shine {
+    padding: 64px;
+    background: linear-gradient(to right, hsl(39, 81%, 65%) 0, hsl(0, 0%, 100%) 10%, hsl(34, 70%, 75%) 20%);
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 600px;
+    }
+
+    100% {
+        background-position: 600px;
+    }
+}
+
+.categories div {
+    display: inline-block;
+    background: rgb(238, 237, 208);
+    color: #c94c4c;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 800ms ease;
+    justify-content: space-between;
+}
+
+.categories div:hover {
+    border-color: #ec0808;
+    transform: scale(1.3);
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background: #e5e2c9;
+}
+
+.fullItem {
+    width: 100%;
+
+}
+
+main .item img,
+.fullItem img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 800ms ease;
+    /* cursor: pointer; */
+    cursor: zoom-in;
+}
+
+main .item img:hover {
+    transform: scale(1.10);
+}
+
+.fullItem img:hover {
+    cursor: zoom-out;
+}
+
+main h2,
+main p,
+main .add-to-cart,
+.fullItem .add-to-cart {
+    text-align: center;
+    transition: transform 800ms ease;
+
+}
+
+
+
+main .add-to-cart,
+.fullItem .add-to-cart {
+    margin-left: 50px;
+}
+
+.fullItem h2,
+.fullItem p,
+.fullItem b {
+    text-align: center;
+}
+
+.fullItem b {
+    float: right;
+}
+
+main b {
+    float: right;
+}
+
+main b,
+main .add-to-cart,
+.fullItem .add-to-cart {
+    color: rgb(42, 121, 11);
+}
+
+main .add-to-cart:hover,
+.fullItem .add-to-cart:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    color: rgb(42, 121, 11);
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
 }

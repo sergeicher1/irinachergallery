@@ -11,15 +11,15 @@ export class Categories extends Component {
                 },
                 {
                     key: '1',
-                    name: 'Up to 100$'
+                    name: 'Up to 99.99$'
                 },
                 {
                     key: '2',
-                    name: 'Up to 200$'
+                    name: '100 - 199.99$'
                 },
                 {
                     key: '3',
-                    name: 'Up to 300$'
+                    name: '200 - 299.99$'
                 }
             ]
         }
@@ -27,6 +27,7 @@ export class Categories extends Component {
     render() {
         return (
             <div className='categories'>
+                <p style={{ fontWeight: 'bold' }}>Filters</p>
                 {this.state.categories.map(el => (
                     <div key={el.key} onClick={() => this.props.chooseCategory(el.key)}>{el.name}</div>
                 ))}

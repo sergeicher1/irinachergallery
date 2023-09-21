@@ -11,7 +11,6 @@ export default function HeaderText() {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-
         }}>
             <pre className='shine'>
                 {title}

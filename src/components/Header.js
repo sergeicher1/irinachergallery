@@ -22,14 +22,7 @@ const showOrders = (props) => {
                 <li>
                     <p className='procced'>To pay <FcMoneyTransfer /></p>
                 </li>
-                {/* <li>
-                    <FcMoneyTransfer className='payMoney' />
-                </li> */}
             </ul>
-            {/* <p className='total'>Total: {total} $</p>
-            <p className='procced'>Click the icon to pay: </p>
-            <FcMoneyTransfer className='payMoney' /> */}
-
         </div>
     )
 }

@@ -17,15 +17,10 @@ export class Order extends Component {
                     <li>
                         <b>{this.props.item.price}$</b>
                     </li>
-                    {/* <li>
-                        <FcMoneyTransfer className='payMoney' />
-                    </li> */}
                     <li>
                         <TbTrashXFilled className='deleteItem' onClick={() => this.props.onDelete(this.props.item.id)} />
                     </li>
                 </ul>
-                {/* <LiaSmileSolid className='smile' /> */}
-                {/* may be move this item to the bottom of the cart near pay button  */}
             </div>
         )
     }

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/irinachergallery/static/css/main.43ff29ef.css",
+    "main.js": "/irinachergallery/static/js/main.4a8d1bcf.js",
+    "static/media/bigB.png": "/irinachergallery/static/media/bigB.973a5e44552b4181f4d3.png",
+    "index.html": "/irinachergallery/index.html",
+    "main.43ff29ef.css.map": "/irinachergallery/static/css/main.43ff29ef.css.map",
+    "main.4a8d1bcf.js.map": "/irinachergallery/static/js/main.4a8d1bcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43ff29ef.css",
+    "static/js/main.4a8d1bcf.js"
+  ]
+}

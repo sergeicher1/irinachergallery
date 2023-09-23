@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BsCart, FaShoppingCart } from 'react-icons/fa'
+import { FaShoppingCart } from 'react-icons/fa'
 import { CgSmileSad } from 'react-icons/cg'
 import { FcMoneyTransfer } from 'react-icons/fc'
 

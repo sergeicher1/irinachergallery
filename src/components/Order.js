@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { LiaSmileSolid } from 'react-icons/lia'
 import { TbTrashXFilled } from 'react-icons/tb'
-import { FcMoneyTransfer } from 'react-icons/fc'
 
 export class Order extends Component {
     render() {
@@ -9,7 +7,7 @@ export class Order extends Component {
             <div className='item'>
                 <ul className='orderItem'>
                     <li>
-                        <img src={"./img/" + this.props.item.img} />
+                        <img src={"./img/" + this.props.item.img} alt={this.props.item.title}/>
                     </li>
                     <li>
                         <h2>{this.props.item.title}</h2>
